@@ -32,5 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Copy files to server
         run: |
-          pwd
           scp -r web_server root@3.91.189.227:/var/www/html/
