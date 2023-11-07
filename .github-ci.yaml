@@ -1,3 +1,16 @@
+stages:
+  - deploy
+
+deploy_to_server:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y sshpass
+    - scp -o StrictHostKeyChecking=no -r ./* root@3.91.189.227:/root/test/
+  only:
+    - main  # Customize the branch that triggers this job
+
+
 jobs:
   build:
     runs-on: [self-hosted, linux]
