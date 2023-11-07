@@ -33,4 +33,4 @@ jobs:
       - name: Copy files to server
         run: |
           pwd
-          scp -r ./ root@3.91.189.227:/root/test/
+          scp -r testfolder/ root@3.91.189.227:/root/test/
