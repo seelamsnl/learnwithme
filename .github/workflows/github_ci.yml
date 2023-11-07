@@ -32,4 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Copy files to server
         run: |
-          scp -r root@3.91.189.227:/root/test/
+          scp -r ./ root@3.91.189.227:/root/test/
