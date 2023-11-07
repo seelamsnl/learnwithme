@@ -9,8 +9,3 @@ deploy_to_server:
     - scp -o StrictHostKeyChecking=no -r ./* root@3.91.189.227:/root/test/
   only:
     - main  # Customize the branch that triggers this job
-
-
-jobs:
-  build:
-    runs-on: [self-hosted, linux]
